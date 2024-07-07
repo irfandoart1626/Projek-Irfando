@@ -125,7 +125,8 @@ function Details() {
             name: details.name,
             nickname: nickname,
             captured_at: new Date().toISOString(),
-            type: details.types[0].type.name // Asumsi: mengambil tipe pertama dari daftar tipe Pokémon
+            // type: details.types[0].type.name // Asumsi: mengambil tipe pertama dari daftar tipe Pokémon
+            type: details.types[0].type.name // Menyimpan tipe sebagai array string
           };
   
           await api2.post("/capture", pokemonData);

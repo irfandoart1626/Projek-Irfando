@@ -80,7 +80,7 @@ function MyPokemonList() {
                 <PokeCard
                   name={pokemon.nickname || pokemon.name}
                   id={pokemon.id}
-                  types={pokemon.types || [{ slot: 1, type: { name: "unknown", url: "" } }]}
+                  types={pokemon.type ? [{ slot: 1, type: { name: pokemon.type, url: "" } }] : [{ slot: 1, type: { name: "unknown", url: "" } }]}
                   click={true}
                 />
                 <div className="text-center mt-2">

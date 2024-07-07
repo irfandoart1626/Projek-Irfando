@@ -112,9 +112,9 @@ input[type="color"]:focus,
   }
 }
 
-.animation-up-down {
+/* .animation-up-down {
   animation: updown 1s ease infinite;
-}
+} */
 
 /* Colors types */
 .normal {
